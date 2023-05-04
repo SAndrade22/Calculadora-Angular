@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MensajeComponent } from './mensaje/mensaje.component';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MensajeComponent],
   templateUrl: './main.html',
   styleUrls: ['./main.css'],
 })
