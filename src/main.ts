@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./main.css'],
 })
 export class App {
-  name = 'Calculadora';
+  name = 'Calculadora por S. Andrade';
   a = 0;
   b = 0;
   c = 0;
