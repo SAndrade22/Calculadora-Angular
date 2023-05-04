@@ -1,0 +1,15 @@
+<h1>{{name}}</h1>
+
+<input type="number" [(ngModel)]="a" />
+<select [(ngModel)]="operacion">
+  <option value="+">Sumar</option>
+  <option value="-">Restar</option>
+  <option value="*">Multiplicar</option>
+  <option value="/">Dividir</option>
+</select>
+<input type="number" [(ngModel)]="b" />
+
+<button (click)="calcular()">Calcular</button>
+<button (click)="clear()">Limpiar</button>
+
+<p>Resultado: {{c}}</p>
