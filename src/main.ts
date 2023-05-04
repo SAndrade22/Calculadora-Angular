@@ -12,17 +12,34 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./main.css'],
 })
 export class App {
-  name = 'Sebastian';
-  cargo = 'Docente';
-  a = 100;
+  name = ' Mi Calculadora básica';
+  a = 0;
   b = 0;
   c = 0;
-  contador = 0;
+  operacion = '';
+
+  clear() {
+    this.a = 0;
+    this.b = 0;
+    this.c = 0;
+    this.operacion = '';
+  }
 
   calcular() {
-    console.log('Hola UPS', this.a);
-    this.contador = this.contador + 1;
-    this.c = 0 + this.a + eval('' + this.b);
+    switch (this.operacion) {
+      case '+':
+        this.c = this.a + this.b;
+        break;
+      case '-':
+        this.c = this.a - this.b;
+        break;
+      case '*':
+        this.c = this.a * this.b;
+        break;
+      case '/':
+        this.c = this.a / this.b;
+        break;
+    }
   }
 }
 
